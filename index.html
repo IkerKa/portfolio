@@ -155,83 +155,100 @@
             <p class="section__text__p1">Check Out My</p>
             <h1 class="title">Projects</h1>
 
-            <div class="project-slider-container">
-                
-                <div class="project-slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
                     
-                    <div class="details-container color-container project-card">
-                        <div class="article-container">
-                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">Medical Image Seg</h2>
-                        <div class="project-tags">
-                            <span>PyTorch</span>
-                            <span>U-Net</span>
-                        </div>
-                        <div class="button-container">
-                            <button class="btn btn-color-2 project-btn" onclick="window.open('URL_GITHUB')">GitHub</button>
+                    <div class="swiper-slide">
+                        <div class="project-content-wrapper">
+                            <div class="details-container color-container project-card">
+                                <div class="article-container">
+                                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                                </div>
+                                <h2 class="experience-sub-title project-title">Medical Image Seg</h2>
+                                <div class="project-tags">
+                                    <span>PyTorch</span>
+                                    <span>U-Net</span>
+                                </div>
+                                <button class="btn btn-color-2 project-btn" onclick="window.open('URL')">GitHub</button>
+                            </div>
+
+                            <div class="project-info">
+                                <h3>Medical Imaging Analysis</h3>
+                                <p>
+                                    Implementación de una arquitectura <strong>U-Net</strong> para la segmentación de órganos en riesgo. Optimización mediante funciones de pérdida personalizadas para manejar el desbalance de clases en datasets médicos.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="details-container color-container project-card">
-                        <div class="article-container">
-                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">DRL Robotics</h2>
-                        <div class="project-tags">
-                            <span>Gym</span>
-                            <span>Python</span>
-                        </div>
-                        <div class="button-container">
-                            <button class="btn btn-color-2 project-btn" onclick="window.open('URL_GITHUB')">GitHub</button>
-                        </div>
-                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-content-wrapper">
+                            <div class="details-container color-container project-card">
+                                <div class="article-container">
+                                    <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                                </div>
+                                <h2 class="experience-sub-title project-title">La X-VOX</h2>
+                                <div class="project-tags">
+                                    <span>PyTorch</span>
+                                    <span>U-Net</span>
+                                </div>
+                                <button class="btn btn-color-2 project-btn" onclick="window.open('URL')">GitHub</button>
+                            </div>
 
-                    <div class="details-container color-container project-card">
-                        <div class="article-container">
-                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">DRL Robotics 2</h2>
-                        <div class="project-tags">
-                            <span>Gym</span>
-                            <span>Python</span>
-                        </div>
-                        <div class="button-container">
-                            <button class="btn btn-color-2 project-btn" onclick="window.open('URL_GITHUB')">GitHub</button>
+                            <div class="project-info">
+                                <h3>LA X-VOX</h3>
+                                <p>
+                                    LA X-VOX es un modelo de segmentación de imágenes médicas basado en la arquitectura U-Net, diseñado para segmentar estructuras anatómicas en imágenes de resonancia magnética. El modelo se entrenó utilizando un conjunto de datos de imágenes médicas anotadas, y se optimizó para mejorar la precisión y la eficiencia en la segmentación de órganos en riesgo.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-
-            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/>
         </section>
         <section id="contact">
-            <p class="section__text__p1"> Get In Touch </p>
-            <h1 class="title"> Contact Me </h1>
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            
             <div class="contact-info-upper-container">
-                <div class="contact-info-container">
-                    <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <div class="contact-info-container" onclick="location.href='mailto:iker48140@gmail.com'">
+                    <div class="icon-circle">
+                        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                    </div>
                     <p><a href="mailto:iker48140@gmail.com">Iker48140@gmail.com</a></p>
-
                 </div>
-                <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+
+                <div class="contact-info-container" onclick="window.open('https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/')">
+                    <div class="icon-circle">
+                        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                    </div>
                     <p><a href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/">LinkedIn</a></p>
                 </div>
             </div>
         </section>
+
         <footer>
-            <nav class="nav-links-container">
-                <ui class="nav-links">
+            <nav class="footer-nav">
+                <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ui>
+                </ul>
             </nav>
-            <p> Copyright &copy; 2026 Iker Morán. All rights reserved. </p>
+            <div class="footer-divider"></div>
+            <p class="copyright">Copyright &copy; 2026 <span>Iker Morán</span>. All rights reserved.</p>
+        </footer>
         <script src="script.js"></script>
+        <div id="back-to-top" onclick="scrollToTop()">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="aura-text">ASCEND</span>
+        </div>
     </body>
 </html>
