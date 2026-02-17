@@ -1,6 +1,7 @@
 
 # Assets folder
 /assets/*
+/project_assets/*
 
 # Ignore compiled CSS and JS files
 *.css
