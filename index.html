@@ -15,7 +15,7 @@
     </head>
     <body>
         <nav id="desktop-nav">
-            <div class="logo"> Iker Morán</div>
+            <div class="logo"> Iker Morán </div>
             <div>
                 <ui class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -46,27 +46,54 @@
         </nav>
 
         <section id="profile">
+            <!-- Particulas -->
+             <div class="embers-container">
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+            </div>
+
+
             <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Iker Morán profile picture" class="profile-pic"/>
+                <img src="./assets/profile-pic.png" alt="Iker Morán profile picture" class="profile-pic" id="profile-img"/>
+                <audio id="parry-sound" src="./assets/bonfire.mp3"></audio>
             </div>
             <div class="section__text">
+                <p class="section__text__p1 souls-welcome" id="welcome-msg">WELCOME, UNKINDLED</p>
+
                 <p class="section__text__p1"> Hi, I'm </p>
-                <h1 class="title"> Iker Morán </h1>
+                <h1 class="souls-title">  Iker Morán <img src="./assets/bonfire-dark-souls.gif" alt="Souls Logo" class="souls-logo"/></h1>
                 <p class="section__text__p2"> SOULS ENJOYER</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Me! </button>
+                    <button class="btn btn-souls" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
+                    <button class="btn btn-souls" onclick="location.href='./#contact'"> Contact Me! </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class = "icon" onClick=location.href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/" />
-                <img src="./assets/github.png" alt="Github Profile" class = "icon" onClick=location.href="https://www.github.com/IkerKa" />
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class = "icon-souls" onClick=location.href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/" />
+                <img src="./assets/github.png" alt="Github Profile" class = "icon-souls" onClick=location.href="https://www.github.com/IkerKa" />
+            </div>
+            <!-- Pequeña linea separatoria y texto para poner musica -->
+            <div class="separator"></div>
+                <audio id="bg-music" loop>
+                    <source src="./assets/Dark Souls 2 Majula theme.mp3" type="audio/mpeg">
+                </audio>
+
+                <div id="music-control" class="music-btn">
+                    <!-- Icono de una hoguera -->
+                    <img src="./assets/bonfirelogo.png" alt="Bonfire Icon" class="bonfire-icon" id="bonfire-icon"/>
+                    <span class="music-text">REST AT BONFIRE</span>
+                </div>
+            <div class="embers-container-bottom">
+                <div id="humanity-msg" class="humanity-text">BONFIRE LIT</div>
             </div>
         </section>
         <section id="about">
             <p class="section__text__p1"> Get To Know More </p>
             <h1 class="title"> About Me </h1>
             <div class="section-container">
-                <div class="section__pic-container">
+                <div class="section__pic-container-about">
                     <img src="./assets/profile-bg.png" alt="Iker Morán profile picture" class="about-pic"/>
                 </div>
                 <div class="about-details-container">
