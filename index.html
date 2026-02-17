@@ -14,6 +14,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
+        <div id="loading-screen">
+            <div class="loading-content">
+                <h2 class="loading-text">Summoning the Unkindled...</h2>
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
         <nav id="desktop-nav">
             <div class="logo"> Iker Morán </div>
             <div>
@@ -61,7 +67,7 @@
                 <audio id="parry-sound" src="./assets/bonfire.mp3"></audio>
             </div>
             <div class="section__text">
-                <p class="section__text__p1 souls-welcome" id="welcome-msg">WELCOME, UNKINDLED</p>
+                <p class="section__text__p1-welcome souls-welcome" id="welcome-msg">WELCOME, UNKINDLED</p>
 
                 <p class="section__text__p1"> Hi, I'm </p>
                 <h1 class="souls-title">  Iker Morán <img src="./assets/bonfire-dark-souls.gif" alt="Souls Logo" class="souls-logo"/></h1>
@@ -90,48 +96,48 @@
             </div>
         </section>
         <section id="about">
-            <p class="section__text__p1"> Get To Know More </p>
-            <h1 class="title"> About Me </h1>
+            <p class="section__text__p1-about"> Get To Know More </p>
+            <h1 class="title-about"> About Me </h1>
             <div class="section-container">
                 <div class="section__pic-container-about">
                     <img src="./assets/profile-bg.png" alt="Iker Morán profile picture" class="about-pic"/>
                 </div>
                 <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
+                    <div class="about-containers-about">
+                        <div class="details-container-about">
                             <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
                             <h3>Experience</h3>
-                            <div class="experience-list">
-                                <div class="experience-item">
-                                    <span class="duration">Feb 2025 - Present</span>
+                            <div class="experience-list-about">
+                                <div class="experience-item-about">
+                                    <span class="duration-about">Feb 2025 - Present</span>
                                     <p> Researcher in Computer Vision, Machine Learning and Medical Imaging at the University of Zaragoza </p>
                                 </div>
-                                <div class="experience-item">
-                                    <span class="duration">Feb 2025 - Jun 2025</span>
+                                <div class="experience-item-about">
+                                    <span class="duration-about">Feb 2025 - Jun 2025</span>
                                     <p> Graduate Research Intern - Internships </p>
                                 </div>
                                 <div class="experience-item">
-                                    <span class="duration">Jul 2024 - Sep 2024</span>
+                                    <span class="duration-about">Jul 2024 - Sep 2024</span>
                                     <p> Computer Science Intern - Internships </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="details-container">
+                        <div class="details-container-about">
                             <img src="./assets/education.png" alt="Education Icon" class="icon"/>
                             <h3>Education</h3>
-                            <div class="experience-list">
+                            <div class="experience-list-about">
                                 <div class="experience-item">
-                                    <span class="duration">Sep 2024 - Jan 2026</span>
+                                    <span class="duration-about">Sep 2024 - Jan 2026</span>
                                     <p> Master in Robotics, Graphics and Computer Vision - University of Zaragoza </p>
                                 </div>
-                                <div class="experience-item">
-                                    <span class="duration">Sep 2019 - Jun 2024</span>
+                                <div class="experience-item-about">
+                                    <span class="duration-about">Sep 2019 - Jun 2024</span>
                                     <p> Bachelor in Computer Science - University of Zaragoza </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-container">
+                    <div class="text-container-about">
                             <p> Hello! I'm Iker, a passionate computer science postgraduate student with a strong interest in computer vision, machine learning and medical imaging. I have interests also in graphics and robotics fields and I am always eager to learn and explore on these areas. I am excited to grow my knowledge and skills in these fields and contribute to innovative projects. Apart from my academic pursuits, I enjoy playing video games, do some like snowboarding. Feel free to explore my portfolio and get in touch if you want to know more about me or my work! </p>
                     </div>
                 </div>
@@ -150,12 +156,19 @@
                             <h3>Technical Stack</h3>
                         </div>
                         <div class="skills-container">
-                            <span class="skill-chip">Python</span>
-                            <span class="skill-chip">C++</span>
-                            <span class="skill-chip">PyTorch</span>
-                            <span class="skill-chip">OpenCV</span>
-                            <span class="skill-chip">Linux</span>
-                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> Python
+                            </span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> C++
+                            </span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> PyTorch
+                            </span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> OpenCV
+                            </span>
+
                         </div>
                     </div>
 
@@ -165,10 +178,15 @@
                             <h3>Research Focus</h3>
                         </div>
                         <div class="skills-container">
-                            <span class="skill-chip">Computer Vision</span>
-                            <span class="skill-chip">Medical Imaging</span>
-                            <span class="skill-chip">Deep Learning</span>
-                            <span class="skill-chip">Reinforcement Learning</span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> Medical Imaging
+                            </span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> Computer Vision
+                            </span>
+                            <span class="skill-chip">
+                                <span style="color: #634f2c; margin-right: 5px;">◆</span> Deep Learning
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -198,7 +216,7 @@
                                     <span>Web Scrappling</span>
                                     <span>Python</span>
                                 </div>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IkerKa/dbdRandomizer')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/dbdRandomizer')">GitHub</button>
                             </div>
 
                             <div class="project-info">
@@ -221,8 +239,8 @@
                                     <span>Python</span>
                                     <span>N-Body Simulation</span>
                                 </div>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('URL')">GitHub</button>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/NBodySimulation.pdf')">Report</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('URL')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/NBodySimulation.pdf')">Report</button>
                             </div>
 
                             <div class="project-info">
@@ -246,8 +264,8 @@
                                     <span>OCR</span>
                                     <span>Diffusion</span>
                                 </div>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('URL')">GitHub</button>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/ACV_PDF.pdf')">Presentation</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('URL')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/ACV_PDF.pdf')">Presentation</button>
                             </div>
 
                             <div class="project-info">
@@ -272,8 +290,8 @@
                                     <span>Structure from Motion</span>
                                     <span>3D Reconstruction</span>
                                 </div>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('URL')">GitHub</button>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/CV_PDF.pdf')">Presentation</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('URL')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/CV_PDF.pdf')">Presentation</button>
                             </div>
 
                             <div class="project-info">
@@ -298,8 +316,8 @@
                                     <span>ROS</span>
                                     <span>Path Planning</span>
                                 </div>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button>
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/AR_pdf.pdf')">Report</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/AR_pdf.pdf')">Report</button>
                             </div>
 
                             <div class="project-info">
@@ -323,8 +341,8 @@
                                     <span>C#</span>
                                     <span>Virtual Reality</span>
                                 </div>
-                                <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/TheLastArrow.pdf')">Presentation</button>
+                                <!-- <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/TheLastArrow.pdf')">Presentation</button>
                             </div>
 
                             <div class="project-info">
@@ -348,8 +366,8 @@
                                     <span>Raspberry Pi</span>
                                     <span>Laberinth Solving</span>
                                 </div>
-                                <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
-                                <button class="btn btn-color-2 project-btn" onclick="window.open('./project_assets/Proyecto Robotica.pdf')">Presentation</button>
+                                <!-- <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/Proyecto Robotica.pdf')">Presentation</button>
                             </div>
 
                             <div class="project-info">
@@ -370,7 +388,7 @@
 
         <section id="interests">
             <p class="section__text__p1">Beyond the code</p>
-            <h1 class="title">Interests & Hobbies</h1>
+            <h1 class="title">The reliquary of my interests</h1>
             <div class="interests-container">
                 <div class="interest-card">
                 <span class="interest-icon">🎮</span>
@@ -433,7 +451,7 @@
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <span class="aura-text">ASCEND</span>
+            <span class="aura-text">Use Bone Shard</span>
         </div>
     </body>
 </html>
