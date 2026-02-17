@@ -1,0 +1,213 @@
+<!-- Backup sin carrousel -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio </title>
+    <!-- Reference stylesheets -->
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"> Iker Morán</div>
+            <div>
+                <ui class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ui>
+            </div>
+
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo"> Iker Morán </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Iker Morán profile picture" class="profile-pic"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1"> Hi, I'm </p>
+                <h1 class="title"> Iker Morán </h1>
+                <p class="section__text__p2"> SOULS ENJOYER</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Me! </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class = "icon" onClick=location.href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/" />
+                <img src="./assets/github.png" alt="Github Profile" class = "icon" onClick=location.href="https://www.github.com/IkerKa" />
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1"> Get To Know More </p>
+            <h1 class="title"> About Me </h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/profile-bg.png" alt="Iker Morán profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <div class="experience-list">
+                                <div class="experience-item">
+                                    <span class="duration">Feb 2025 - Present</span>
+                                    <p> Researcher in Computer Vision, Machine Learning and Medical Imaging at the University of Zaragoza </p>
+                                </div>
+                                <div class="experience-item">
+                                    <span class="duration">Feb 2025 - Jun 2025</span>
+                                    <p> Graduate Research Intern - Internships </p>
+                                </div>
+                                <div class="experience-item">
+                                    <span class="duration">Jul 2024 - Sep 2024</span>
+                                    <p> Computer Science Intern - Internships </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                            <h3>Education</h3>
+                            <div class="experience-list">
+                                <div class="experience-item">
+                                    <span class="duration">Sep 2024 - Jan 2026</span>
+                                    <p> Master in Robotics, Graphics and Computer Vision - University of Zaragoza </p>
+                                </div>
+                                <div class="experience-item">
+                                    <span class="duration">Sep 2019 - Jun 2024</span>
+                                    <p> Bachelor in Computer Science - University of Zaragoza </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                            <p> Hello! I'm Iker, a passionate computer science postgraduate student with a strong interest in computer vision, machine learning and medical imaging. I have interests also in graphics and robotics fields and I am always eager to learn and explore on these areas. I am excited to grow my knowledge and skills in these fields and contribute to innovative projects. Apart from my academic pursuits, I enjoy playing video games, do some like snowboarding. Feel free to explore my portfolio and get in touch if you want to know more about me or my work! </p>
+                    </div>
+                </div>
+            </div>
+            
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#experience'"/>
+        </section>
+        <section id="experience">
+            <p class="section__text__p1"> Explore My </p>
+            <h1 class="title"> Knowledge & Skills </h1>
+            <div class="experience-details-container">
+                <div class="skills-wrapper">
+                    <div class="skills-card">
+                        <div class="card-header">
+                            <img src="./assets/experience.png" class="icon" />
+                            <h3>Technical Stack</h3>
+                        </div>
+                        <div class="skills-container">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">C++</span>
+                            <span class="skill-chip">PyTorch</span>
+                            <span class="skill-chip">OpenCV</span>
+                            <span class="skill-chip">Linux</span>
+                            <span class="skill-chip">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-header">
+                            <img src="./assets/education.png" class="icon" />
+                            <h3>Research Focus</h3>
+                        </div>
+                        <div class="skills-container">
+                            <span class="skill-chip">Computer Vision</span>
+                            <span class="skill-chip">Medical Imaging</span>
+                            <span class="skill-chip">Deep Learning</span>
+                            <span class="skill-chip">Reinforcement Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="research-summary">
+                <p>
+                    Focusing on the intersection of <strong>Medical Imaging</strong> and <strong>Computer Vision</strong>. I research on the application of deep learning techniques to medical image analysis, with a particular interest in evaluating and implementing algorithms for image segmentation, classification and reconstruction. 
+                </p>
+            </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#projects'"/>
+        </section>
+        <section id="projects">
+            <p class="section__text__p1"> Check Out My </p>
+            <h1 class="title"> Projects </h1>
+            <!-- p1 -->
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title"> Project One </h2>
+                        <div class="button-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href=''"> GitHub </button>
+                            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href=''"> Live Demo </button> -->
+                        </div>
+                    </div>
+                    <!-- P2 -->
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title"> Project One </h2>
+                        <div class="button-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href=''"> GitHub </button>
+                            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href=''"> Live Demo </button> -->
+                        </div>
+                    </div>
+                    
+                <!-- Añadir mas proyectos cuando los tenga -->
+                <!-- TODO: hacerlo scrolleable horizontalmente por si hay varios :o -->
+                 </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1"> Get In Touch </p>
+            <h1 class="title"> Contact Me </h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                    <p><a href="mailto:iker48140@gmail.com">Iker48140@gmail.com</a></p>
+
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav class="nav-links-container">
+                <ui class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ui>
+            </nav>
+            <p> Copyright &copy; 2026 Iker Morán. All rights reserved. </p>
+        <script src="script.js"></script>
+    </body>
+</html>
