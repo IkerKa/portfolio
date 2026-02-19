@@ -15,13 +15,37 @@
     </head>
     <body>
         <div id="loading-screen">
-            <div class="loading-content">
-                <h2 class="loading-text">Summoning the Unkindled...</h2>
-                <div class="loading-spinner"></div>
+            <div class="souls-loader-wrap">
+                <div class="rune-container">
+                    <div class="rune-circle"></div>
+                    <div class="rune-core"></div>
+                </div>
+                
+                <h2 class="loading-text" data-text="Preparing the Unkindled Soul...">
+                    Preparing the Unkindled Soul...
+                </h2>
+                <p class="loading-subtext">The fire fades... and only embers remain.</p>
             </div>
         </div>
+        <canvas id="fogCanvas"></canvas>
+
+        <style>
+        #fogCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999; /* Por encima de todo */
+            pointer-events: none; /* Crucial: permite clickear lo que hay debajo */
+            opacity: 0.6; /* Ajusta la densidad visual de la niebla */
+        }
+        </style>
         <nav id="desktop-nav">
-            <div class="logo"> Iker Morán </div>
+            <div class="logo"> 
+                <img src="./assets/bonfire-dark-souls.gif" alt="Souls Logo" class="souls-logo-small"/>
+               <span> Iker Morán </span> 
+            </div>
             <div>
                 <ui class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -59,6 +83,11 @@
                 <div class="ember"></div>
                 <div class="ember"></div>
                 <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
+                <div class="ember"></div>
             </div>
 
 
@@ -70,7 +99,11 @@
                 <p class="section__text__p1-welcome souls-welcome" id="welcome-msg">WELCOME, UNKINDLED</p>
 
                 <p class="section__text__p1"> Hi, I'm </p>
-                <h1 class="souls-title">  Iker Morán <img src="./assets/bonfire-dark-souls.gif" alt="Souls Logo" class="souls-logo"/></h1>
+                <h1 class="souls-title">
+                     <img src="./assets/solaire.gif" alt="Souls Logo" class="souls-logo"/> 
+                     <span class="souls-name">Iker Morán</span> 
+                     <img src="./assets/solaire.gif" alt="Souls Logo" class="souls-logo"/>
+                </h1>
                 <p class="section__text__p2"> SOULS ENJOYER</p>
                 <div class="btn-container">
                     <button class="btn btn-souls" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
@@ -82,15 +115,24 @@
             </div>
             <!-- Pequeña linea separatoria y texto para poner musica -->
             <div class="separator"></div>
-                <audio id="bg-music" loop>
-                    <source src="./assets/Dark Souls 2 Majula theme.mp3" type="audio/mpeg">
-                </audio>
+            <div class="bonfire-wrapper">
+                <audio id="bg-music" loop></audio>
+
+                <div id="bonfire-menu" class="bonfire-menu">
+                    <div class="menu-header">ATTUNE MEMORIES</div>
+                    <ul id="track-list" style="margin:0; padding:0;">
+                        <li class="track-item" data-src="./assets/majula.mp3">Majula</li>
+                        <li class="track-item" data-src="./assets/Firelink Shrine.mp3">Firelink Shrine</li>
+                        <li class="track-item" data-src="./assets/sisterfriede.mp3">Sister Friede</li>
+                        <li class="track-item" data-src="./assets/plinplin.mp3">Plin Plin Plon</li>
+                    </ul>
+                </div>
 
                 <div id="music-control" class="music-btn">
-                    <!-- Icono de una hoguera -->
-                    <img src="./assets/bonfirelogo.png" alt="Bonfire Icon" class="bonfire-icon" id="bonfire-icon"/>
+                    <img src="./assets/bonfirelogo.png" alt="Bonfire" class="bonfire-icon"/>
                     <span class="music-text">REST AT BONFIRE</span>
                 </div>
+            </div>
             <div class="embers-container-bottom">
                 <div id="humanity-msg" class="humanity-text">BONFIRE LIT</div>
             </div>
@@ -391,45 +433,61 @@
             <h1 class="title">The reliquary of my interests</h1>
             <div class="interests-container">
                 <div class="interest-card">
-                <span class="interest-icon">🎮</span>
-                <h3>Souls-like Veteran</h3>
-                <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                    <div class="card-content">
+                        <div class="card-header-souls">
+                            <span class="interest-icon">🎮</span>
+                            <h3>Souls-like<br>Veteran</h3>
+                        </div>
+                        <div class="souls-divider"></div>
+                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                    </div>
                 </div>
                 <div class="interest-card">
-                <span class="interest-icon">🏂</span>
-                <h3>Snowboarding</h3>
-                <p>Finding the perfect balance between adrenaline and the laws of physics on the slopes.</p>
+                    <div class="card-content">
+                        <div class="card-header-souls">
+                            <span class="interest-icon">🎮</span>
+                            <h3>Souls-like<br>Veteran</h3>
+                        </div>
+                        <div class="souls-divider"></div>
+                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                    </div>
                 </div>
                 <div class="interest-card">
-                <span class="interest-icon">📸</span>
-                <h3>Visual Arts</h3>
-                <p>Exploring how light and composition work, which helps my Computer Vision intuition.</p>
+                    <div class="card-content">
+                        <div class="card-header-souls">
+                            <span class="interest-icon">🎮</span>
+                            <h3>Souls-like<br>Veteran</h3>
+                        </div>
+                        <div class="souls-divider"></div>
+                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                    </div>
                 </div>
-                <div class="interest-card">
-                <span class="interest-icon">☕</span>
-                <h3>Coffee addict</h3>
-                <p>Turning caffeine into complex C++ algorithms and research papers.</p>
-                </div>
+                
             </div>
             <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/>
         </section>
         <section id="contact">
-            <p class="section__text__p1">Get In Touch</p>
-            <h1 class="title">Contact Me</h1>
+            <p class="section__text__p1">Leave a sign</p>
+            <h1 class="title">Summon Cooperation</h1>
             
             <div class="contact-info-upper-container">
+                <div class="corner-rune top-left"></div>
+                <div class="corner-rune bottom-right"></div>
+
                 <div class="contact-info-container" onclick="location.href='mailto:iker48140@gmail.com'">
                     <div class="icon-circle">
-                        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                        <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon"/>
                     </div>
-                    <p><a href="mailto:iker48140@gmail.com">Iker48140@gmail.com</a></p>
+                    <p>Iker48140@gmail.com</p>
                 </div>
+
+                <div class="vertical-divider"></div>
 
                 <div class="contact-info-container" onclick="window.open('https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/')">
                     <div class="icon-circle">
-                        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon"/>
                     </div>
-                    <p><a href="https://www.linkedin.com/in/iker-mor%C3%A1n-cavero-212399239/">LinkedIn</a></p>
+                    <p>LinkedIn</p>
                 </div>
             </div>
         </section>
