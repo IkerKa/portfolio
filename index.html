@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="https://js-dos.com/8.0/js-dos.js"></script>
-    <link href="https://js-dos.com/8.0/js-dos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-dos@7.3.3/dist/js-dos.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-dos@7.3.3/dist/js-dos.js"></script>
     </head>
     <body>
         <div id="mobile-blocker">
@@ -592,7 +592,7 @@
                     <span class="souls-subtitle">Seeker of the Unseen</span>
                 </div>
                 <div class="archive-grid">
-                    <button id="summon-doom-btn" class="btn btn-souls" style="margin-top: 15px;">Summon DOOM</button>
+                    <button id="summon-doom">SUMMON DOOM</button>
                 </div>
                 <div class="archive-grid">
                     <div class="archive-item" onclick="openItem('The Grimoire', 'A collection of all the programming languages, frameworks, and tools I have used throughout my journey. Each entry includes a brief description of my experience with it and the projects I have built using it.', [
@@ -656,7 +656,12 @@
                 <span>DOOM.EXE - Memoria Restaurada</span>
                 <button id="close-doom" class="close-btn">X</button>
             </div>
-            <div id="dos-canvas" style="width: 640px; height: 400px;"></div>
+            <div class="container">
+                    <div class="big-holder">
+                    <div id="gradientScreen"></div>
+                    <canvas id="screen" tabindex="0">...</canvas>
+                </div>
+            </div>
         </div>
     </body>
 </html>
