@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://js-dos.com/8.0/js-dos.js"></script>
+    <link href="https://js-dos.com/8.0/js-dos.css" rel="stylesheet">
     </head>
     <body>
         <div id="mobile-blocker">
@@ -105,7 +108,7 @@
                      <span class="souls-name">Iker Morán</span> 
                      <img src="./assets/solaire.gif" alt="Souls Logo" class="souls-logo"/>
                 </h1>
-                <p class="section__text__p2"> SOULS ENJOYER</p>
+                <p class="section__text__p2-souls">Souls Enjoyer</p>
                 <div class="btn-container">
                     <button class="btn btn-souls" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
                     <button class="btn btn-souls" onclick="location.href='./#contact'"> Contact Me! </button>
@@ -188,7 +191,7 @@
                 </div>
             </div>
             
-            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#experience'"/>
+            <!-- <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#experience'"/> -->
         </section>
         <section id="experience">
             <p class="section__text__p1"> Explore My </p>
@@ -244,7 +247,7 @@
                 </p>
             </div>
             </div>
-            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#projects'"/>
+            <!-- <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#projects'"/> -->
         </section>
         <section id="projects">
             <p class="section__text__p1">Check Out My</p>
@@ -314,6 +317,7 @@
                                 </div>
                                 <button class="btn btn-souls project-btn" onclick="window.open('URL')">GitHub</button>
                                 <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/ACV_PDF.pdf')">Presentation</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/ACV_PDF.pdf')">Demo</button>
                             </div>
 
                             <div class="project-info">
@@ -416,12 +420,68 @@
                                 </div>
                                 <!-- <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
                                 <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/Proyecto Robotica.pdf')">Presentation</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/Proyecto Robotica.pdf')">Demo</button>
                             </div>
 
                             <div class="project-info">
                                 <h3>A self-navigating robot for labyrinth solving</h3>
                                 <p>
                                     We had to build from scratch a robot capable of solving a labyrinth. We implemented a computer vision system using OpenCV to detect the labyrinth's structure and a pathfinding algorithm to navigate through it. The robot was built using a Raspberry Pi, motors, and sensors, allowing it to autonomously explore and find the exit of the labyrinth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="project-content-wrapper">
+                            <div class="details-container color-container project-card">
+                                <div class="article-container">
+                                    <img src="./assets/tfg.png" alt="Project 1" class="project-img"/>
+                                </div>
+                                <h2 class="experience-sub-title project-title">ArUco & Robotics<h2>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Computer Vision</span>
+                                    <span>ArUco Markers</span>
+                                    <span>Pose Estimation</span>
+                                </div>
+                                <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">Report</button>
+                                <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">Demos</button>
+                            </div>
+
+                            <div class="project-info">
+                                <h3>Dynamic object localization with RGB-D data for robotic applications</h3>
+                                <p>
+                                    An object localization system was built using RGB-D information and ArUco markers. The system used OpenCV to detect objects within a defined plane and estimate these objects in real time thanks to these markers. Additionally, alternatives such as the use of feature matching for localization were investigated, although this was ruled out due to its instability in environments with little texture or variable lighting. This project was implemented in Python and tested in a simulated environment with Robotics Toolbox.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="swiper-slide">
+                        <div class="project-content-wrapper">
+                            <div class="details-container color-container project-card">
+                                <div class="article-container">
+                                    <img src="./assets/tfm.png" alt="Project 1" class="project-img"/>
+                                </div>
+                                <h2 class="experience-sub-title project-title">Retinal Layer Segmentation <h2>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Computer Vision</span>
+                                    <span>Medical Imaging</span>
+                                    <span>Deep Learning</span>
+                                </div>
+                                <!-- <button class="btn btn-souls project-btn" onclick="window.open('https://github.com/IkerKa/AR_Final')">GitHub</button> -->
+                                <!-- <button class="btn btn-souls project-btn" onclick="window.open('./project_assets/Proyecto Robotica.pdf')">Presentation</button> -->
+                            </div>
+
+                            <div class="project-info">
+                                <h3>Insights into deep-learning segmentation methods of the retinal layers from Optic Coherence
+                                Tomographies
+                                </h3>
+                                <p>
+                                    A comparative study of deep learning-based segmentation methods for retinal layer segmentation in Optical Coherence Tomography (OCT) images. The project involved implementing and evaluating various architectures. It also included a proposal for a preprocessing pipeline to let the model focus on the relevant features of the image, improving the segmentation performance. The study provided insights into the strengths and weaknesses of each method, as well as recommendations for future research in this area.
                                 </p>
                             </div>
                         </div>
@@ -481,7 +541,7 @@
                 
                 
             </div>
-            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/>
+            <!-- <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/> -->
         </section>
         <section id="contact">
             <p class="section__text__p1">Leave a sign</p>
@@ -526,8 +586,47 @@
             </div>
 
             <div id="hidden-content">
-                <h2>Secret Area Unlocked: The Archives</h2>
-                <p>Has demostrado perspicacia, Latente.</p>
+                <div class="hidden-archives-header">
+                    <h2 class="hidden-title">The Hidden Archives</h2>
+                    <div class="souls-divider"></div>
+                    <span class="souls-subtitle">Seeker of the Unseen</span>
+                </div>
+                <div class="archive-grid">
+                    <button id="summon-doom-btn" class="btn btn-souls" style="margin-top: 15px;">Summon DOOM</button>
+                </div>
+                <div class="archive-grid">
+                    <div class="archive-item" onclick="openItem('The Grimoire', 'A collection of all the programming languages, frameworks, and tools I have used throughout my journey. Each entry includes a brief description of my experience with it and the projects I have built using it.', [
+                        { name: 'Python', description: 'Used for various projects including machine learning, web development, and scripting.' },
+                        { name: 'C++', description: 'Utilized for performance-critical applications and game development.' },
+                        { name: 'PyTorch', description: 'My go-to framework for deep learning projects and research.' },
+                        { name: 'OpenCV', description: 'Extensively used for computer vision tasks in multiple projects.' },
+                        { name: 'Docker', description: 'Employed for containerization and deployment of applications.' },
+                    ])">
+                        <h3>The Grimoire</h3>
+                    </div>
+                    <div class="archive-item" onclick="openItem('Old Lore', 'A compilation of all my favourite books, movies, series, and games that have influenced me in some way. It also includes a short review of each one and why I recommend it.', [
+                        { name: 'Dark Souls', description: 'A masterpiece of game design that has shaped my appreciation for challenging and immersive experiences.' },
+                        { name: 'Dark Souls II', description: 'An underrated gem that expands on the original with new mechanics and a captivating world.' },
+                        { name: 'Bloodborne', description: 'A thrilling and atmospheric game that combines Lovecraftian horror with fast-paced combat.' },
+                        { name: 'Dark Souls III', description: 'A fitting conclusion to the series that delivers intense action and a hauntingly beautiful world.' },
+                        { name: 'Elden Ring', description: 'An ambitious open-world game that takes the Souls formula to new heights with its vast landscapes and intricate lore.' },
+                        { name: 'Nier: Automata', description: 'A thought-provoking game that explores themes of consciousness and identity through its compelling narrative and gameplay.' },
+                        ])">
+                        <h3>My essentials</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="inventory-popup" class="inventory-overlay" onclick="closeItem()">
+                <div class="inventory-box" onclick="event.stopPropagation()">
+                    <span class="close-inventory" onclick="closeItem()">[ BACK ]</span>
+                    <div class="inventory-content">
+                        <h3 id="modal-title">Item Name</h3>
+                        <p id="modal-desc" class="item-description">Description...</p>
+                        
+                        <div id="modal-items-container" class="items-grid"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -549,6 +648,15 @@
                 <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span class="aura-text">Use Bone Shard</span>
+        </div>
+
+
+        <div id="doom-draggable-window" class="doom-window" style="display: none;">
+            <div id="doom-header" class="window-header">
+                <span>DOOM.EXE - Memoria Restaurada</span>
+                <button id="close-doom" class="close-btn">X</button>
+            </div>
+            <div id="dos-canvas" style="width: 640px; height: 400px;"></div>
         </div>
     </body>
 </html>
