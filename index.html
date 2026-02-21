@@ -15,12 +15,16 @@
     </head>
     <body>
         <div id="mobile-blocker">
+            <!--  imagen encima -->
+            <img src="./assets/elden.png" alt="ash" class="darksign-t"/>
             <div class="blocker-content">
                 <h1 class="blocker-title">ACCESS DENIED</h1>
                 <div class="blocker-line"></div>
                 <p class="blocker-text">Thy screen is too small to witness this grace.</p>
                 <p class="blocker-subtext">Seek a larger vessel to proceed.</p>
             </div>
+            <!-- imagen justo debajo -->
+            <img src="./assets/cinder.png" alt="cinder" class="cinder"/>
         </div>
         <div id="loading-screen">
             <div class="souls-loader-wrap">
@@ -32,7 +36,7 @@
                 <h2 class="loading-text" data-text="Preparing the Unkindled Soul...">
                     Preparing the Unkindled Soul...
                 </h2>
-                <p class="loading-subtext">The fire fades... and only embers remain.</p>
+                <p id="lore-quote" class="lore-quote">Seek the strength, the rest will follow.</p>
             </div>
         </div>
         <canvas id="fogCanvas"></canvas>
@@ -245,7 +249,7 @@
         <section id="projects">
             <p class="section__text__p1">Check Out My</p>
             <h1 class="title">Projects</h1>
-
+            
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     
@@ -426,7 +430,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </section>
 
@@ -434,36 +438,47 @@
             <p class="section__text__p1">Beyond the code</p>
             <h1 class="title">The reliquary of my interests</h1>
             <div class="interests-container">
-                <div class="interest-card">
+                <div class="interest-card souls-theme">
                     <div class="card-content">
                         <div class="card-header-souls">
-                            <span class="interest-icon">🎮</span>
-                            <h3>Souls-like<br>Veteran</h3>
+                            <div class="souls-emblem"></div> 
+                            <h3>Video Games</h3>
                         </div>
                         <div class="souls-divider"></div>
-                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
-                <div class="interest-card">
+                <div class="interest-card souls-theme">
                     <div class="card-content">
                         <div class="card-header-souls">
-                            <span class="interest-icon">🎮</span>
-                            <h3>Souls-like<br>Veteran</h3>
+                            <div class="souls-emblem"></div> 
+                            <h3>Video Games</h3>
                         </div>
                         <div class="souls-divider"></div>
-                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
-                <div class="interest-card">
+                <div class="interest-card souls-theme">
                     <div class="card-content">
                         <div class="card-header-souls">
-                            <span class="interest-icon">🎮</span>
-                            <h3>Souls-like<br>Veteran</h3>
+                            <div class="souls-emblem"></div> 
+                            <h3>Snowboarding</h3>
                         </div>
                         <div class="souls-divider"></div>
-                        <p>Patience and pattern recognition aren't just for ML; they are for surviving Caelid too.</p>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
+                <div class="interest-card souls-theme">
+                    <div class="card-content">
+                        <div class="card-header-souls">
+                            <div class="souls-emblem"></div> 
+                            <h3>Music</h3>
+                        </div>
+                        <div class="souls-divider"></div>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                
                 
             </div>
             <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onClick="location.href='#contact'"/>
@@ -491,6 +506,28 @@
                     </div>
                     <p>LinkedIn</p>
                 </div>
+            </div>
+            <p class="summon-subtext">Use this sign to cross the gaps between worlds.</p>
+        </section>
+        
+        <section id="secret-area">
+            <div id="souls-cursor"></div>
+            
+            <div id="illusory-wall-hint">?</div>
+
+            <div id="lock-interface">
+                <div class="lock-dial-container">
+                    <div class="dial">0</div>
+                    <div class="dial">0</div>
+                    <div class="dial">0</div>
+                </div>
+                <button id="unlock-btn">Test your might</button>
+                <p class="puzzle-hint">The embers want to guide from the lowest to the highest...</p>
+            </div>
+
+            <div id="hidden-content">
+                <h2>Secret Area Unlocked: The Archives</h2>
+                <p>Has demostrado perspicacia, Latente.</p>
             </div>
         </section>
 
